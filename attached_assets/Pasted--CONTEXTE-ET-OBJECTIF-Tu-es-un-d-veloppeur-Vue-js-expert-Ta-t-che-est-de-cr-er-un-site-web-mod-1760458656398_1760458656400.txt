@@ -1,0 +1,81 @@
+**CONTEXTE ET OBJECTIF :**
+Tu es un développeur Vue.js expert. Ta tâche est de créer un site web moderne, élégant et entièrement responsive pour "ESM Travel", une agence de tourisme spécialisée dans l'Afrique de l'Ouest. Le site doit avoir une esthétique "landscape" (paysagère/immersive) et une navigation intuitive. L'objectif est de présenter l'agence, ses services, ses destinations et ses contacts. Une attention particulière sera portée à la mise en page et à l'intégration future d'un assistant virtuel.
+
+**TECHNOLOGIES ET FRAMEWORK :**
+* **Frontend :** Vue.js 3 (avec Composition API)
+* **CSS :** Tailwind CSS (pour une stylisation rapide et modulaire) et du CSS personnalisé pour les touches finales.
+* **Icônes :** Font Awesome 6 (pour les icônes de réseaux sociaux et autres).
+* **Déploiement cible :** Replit (assure que le code est structuré pour cette plateforme).
+
+**STRUCTURE DU SITE (4 SECTIONS PRINCIPALES) :**
+
+1.  **ACCUEIL / NAVBAR :**
+    * **Navbar fixe en haut :** Logo "ESM Travel" (texte simple ou SVG placeholder), liens de navigation ancre (#about, #services, #gallery, #contact).
+    * **Section Hero (accueil) :**
+        * Image de fond pleine largeur (placeholder ou URL d'image libre de droits sur l'Afrique de l'Ouest).
+        * Titre accrocheur : "ESM Travel : Votre Aventure Ouest-Africaine Commence Ici."
+        * Slogan : "Découvrez l'Afrique de l'Ouest autrement, avec passion et expertise."
+        * Bouton "Découvrir nos destinations" qui ancre vers la section #gallery.
+        * Effet de parallaxe léger sur l'image de fond si possible.
+
+2.  **À PROPOS DE NOUS (#about) :**
+    * **Titre :** "À Propos d'ESM Travel : Votre Partenaire de Voyage en Afrique de l'Ouest"
+    * **Contenu (Détaillé) :**
+        * "Fondée avec la vision de révéler la richesse culturelle, historique et naturelle de l'Afrique de l'Ouest, ESM Travel est votre agence de tourisme dédiée. Forts d'une connaissance approfondie des paysages, des traditions et des opportunités uniques de la région, nous nous engageons à offrir des expériences de voyage authentiques, sécurisées et inoubliables. Que vous soyez en quête d'aventure, de détente, de découvertes culturelles ou de voyages d'affaires, notre équipe d'experts passionnés est là pour concevoir l'itinéraire parfait, du Ghana au Sénégal, en passant par le Bénin et au-delà. Notre mission : faire de chaque voyage une histoire mémorable."
+    * Mise en page : Texte lisible sur un fond apaisant, éventuellement avec une image secondaire discrète.
+
+3.  **NOS SERVICES (#services) :**
+    * **Titre :** "Nos Services : L'Art du Voyage Sur Mesure"
+    * **Contenu (Description Détaillée des Services) :**
+        * **Voyages Personnalisés :** "Conception d'itinéraires uniques adaptés à vos envies, votre budget et vos contraintes. Excursions culturelles, safaris photo, treks en nature, séjours balnéaires, voyages d'affaires."
+        * **Hébergement & Logistique :** "Sélection rigoureuse d'hôtels, lodges et hébergements authentiques, réservation de transports locaux (vols internes, véhicules avec chauffeur, etc.)."
+        * **Guides Experts :** "Mise à disposition de guides locaux francophones et anglophones, connaissant parfaitement la région et ses secrets."
+        * **Assistance & Sécurité :** "Assistance 24/7 sur place, conseils santé et sécurité, gestion des formalités (visas si applicable)."
+        * **Forfaits Groupes & Événements :** "Organisation de voyages pour groupes, séminaires, incentives et événements spéciaux en Afrique de l'Ouest."
+    * Mise en page : Utilisation de cartes (cards) ou de blocs de contenu avec icônes (Font Awesome) pour chaque service.
+
+4.  **GALERIE (#gallery) :**
+    * **Titre :** "Nos Destinations : L'Afrique de l'Ouest en Images"
+    * **Contenu :** Une grille d'images (photos de haute qualité de paysages, marchés, monuments, faune, etc.) des pays d'Afrique de l'Ouest.
+    * **Catégorisation :** Les images devront être classées ou filtrables par pays (Ghana, Sénégal, Bénin, Côte d'Ivoire, Togo, Burkina Faso, Mali, etc.). Utiliser des placeholders pour les images (ex: `https://via.placeholder.com/400x300?text=Ghana+Plage`) si les URLs réelles ne sont pas disponibles.
+    * Effet : Lightbox ou modal pour afficher les images en grand format au clic.
+    * Mise en page : Grille responsive (ex: 3 colonnes sur desktop, 2 sur tablette, 1 sur mobile).
+
+5.  **CONTACT (#contact) :**
+    * **Titre :** "Contactez ESM Travel : Planifions Votre Prochaine Évasion"
+    * **Contenu :**
+        * **Email :** `contact@esmtravel.com` (placeholder)
+        * **Téléphone :** `+228 9X XXX XXX` (placeholder)
+        * **Réseaux Sociaux :** Icônes cliquables (Font Awesome) pour :
+            * X (Twitter)
+            * TikTok
+            * Instagram
+            * Facebook
+            * Skype
+            * Discord
+            * Reddit
+        * Formulaire de contact simple (champs : Nom, Email, Message - l'envoi ne sera pas fonctionnel, c'est juste la structure visuelle).
+    * Mise en page : Bien structurée, avec des icônes de grande taille pour les réseaux sociaux.
+
+**FONCTIONNALITÉS TRANSVERSALES :**
+
+* **Responsive Design :** Le site doit être parfaitement consultable sur tous les appareils (mobile, tablette, desktop).
+* **Scrolling Smooth :** Les liens d'ancrage de la navbar doivent utiliser un défilement doux (smooth scroll).
+* **Bulle d'Assistant Virtuel (à droite, en bas) :**
+    * Une petite icône flottante (ex: bulle de discussion, robot, ou "aide") fixée en bas à droite de l'écran.
+    * Au clic, elle ouvre/ferme une petite fenêtre de discussion vide (placeholder pour l'intégration future d'un assistant IA).
+    * Utiliser une `position: fixed; bottom: 20px; right: 20px; z-index: 1000;`.
+* **Footer :** Simple copyright "© 2025 ESM Travel. Tous droits réservés."
+
+**CONSIGNES DE CODAGE :**
+
+* Utilise `vue create` ou un template équivalent pour une structure Vue 3.
+* Configure Tailwind CSS correctement.
+* Organise le code en composants Vue (ex: `Navbar.vue`, `Hero.vue`, `About.vue`, `Services.vue`, `Gallery.vue`, `Contact.vue`, `ChatBubble.vue`, `Footer.vue`).
+* Les données des sections (comme les images de la galerie) peuvent être gérées dans un tableau de données simple dans le composant parent ou via un fichier `data.js` si tu veux être très propre.
+* Privilégie la Composition API pour la logique des composants.
+* Pour les images de la galerie, utilise des URLs de placeholders libres de droits ou des images génériques représentant l'Afrique de l'Ouest si tu peux en trouver rapidement et légalement. Sinon, des `via.placeholder.com` sont acceptables avec des textes descriptifs.
+
+**LIVRABLE ATTENDU :**
+
+Un répertoire Replit complet et fonctionnel pour le site web "ESM Travel", prêt à être lancé. Le code doit être clair, commenté et respecter les bonnes pratiques de développement Vue.js.
